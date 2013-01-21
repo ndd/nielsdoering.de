@@ -1,0 +1,4 @@
+User-agent: WebReaper
+Disallow: /
+
+Sitemap: http://www.nielsdoering.de/sitemap.txt
