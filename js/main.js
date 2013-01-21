@@ -43,19 +43,9 @@ $(function() {
 		$('html').addClass('no-jmpress');
 	}
 
-	// lightbox
-	var options = {
-		imageBlank: 	'img/lightbox-blank.gif',
-		imageLoading: 	'img/lightbox-loading.gif',
-		imageBtnClose: 	'img/lightbox-btn-close.gif',
-		imageBtnPrev: 	'img/lightbox-btn-prev.gif',
-		imageBtnNext: 	'img/lightbox-btn-next.gif',
-		txtImage: 		'Bild',
-		txtOf: 			'von'
-	};
-	$('#impress .project').each(function(index) {
-  		$('.image', $(this)).lightBox(options);
-	});
+	// fancy box
+	$("a[rel=mxp_gallery]").fancybox();
+	$("a[rel=kicker_gallery]").fancybox();
 
 	// spam protected mail and phone link
 	getMail();
