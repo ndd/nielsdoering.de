@@ -1,0 +1,351 @@
+/* ==========================================================================
+   base styles: opinionated defaults
+   ========================================================================== */
+body {
+  background-color: #262626;
+  color: #fff;
+  font-family: 'Monda', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  /* text-shadow: #000 2px 2px 0; */ }
+
+a {
+  color: #fff;
+  text-decoration: underline;
+  -webkit-transition: background-color 0.1s ease-out;
+  -moz-transition: background-color 0.1s ease-out;
+  -o-transition: background-color 0.1s ease-out;
+  -ms-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out; }
+  a:hover {
+    color: #fff !important;
+    text-decoration: none; }
+
+ul {
+  padding: 0; }
+  ul li {
+    display: inline; }
+
+address {
+  font-style: normal; }
+
+h5 {
+  font-size: 16px;
+  margin: 15px 0 3px 0; }
+
+/*
+ * remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+img {
+  vertical-align: middle; }
+
+/* ==========================================================================
+   main styles
+   ========================================================================== */
+.page {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.page section {
+  border-left: 1px solid #fff;
+  padding-left: 10px;
+  width: 689px; }
+  .page section.headline {
+    border: none; }
+
+/*
+ * about (home)
+ */
+#about h1, #about h2 {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 42px;
+  margin: 0; }
+#about h1 {
+  margin-bottom: 25px; }
+#about h2 strong {
+  font-size: 40px;
+  font-weight: bold; }
+#about h3 {
+  margin: 35px 0 0 0; }
+#about a {
+  color: #00a0d6; }
+  #about a:hover {
+    background-color: #00a0d6; }
+#about img {
+  border: 1px solid #fff;
+  float: left;
+  height: 100px;
+  margin-right: 10px;
+  width: 100px; }
+#about .skills span {
+  line-height: normal;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out; }
+  #about .skills span:hover {
+    background-color: #00a0d6;
+    cursor: default;
+    padding-left: 4px;
+    padding-right: 4px; }
+
+/*
+ * projects
+ */
+.project {
+  background-color: #262626;
+  /*
+  .arrow {
+      -webkit-animation: point-down 0.5s alternate infinite;
+      -moz-animation: point-down 0.5s alternate infinite;
+      -ms-animation: point-down 0.5s alternate infinite;
+      -o-animation: point-down 0.5s alternate infinite;
+      animation: point-down 0.5s alternate infinite;
+      color: $colorProjects;
+      position: relative;
+  }
+  */ }
+  .project a {
+    color: #c6bd25; }
+    .project a:hover {
+      background-color: #c6bd25; }
+    .project a.image:hover {
+      background-color: transparent; }
+  .project .arrow {
+    border: 1px solid #c6bd25;
+    border-radius: 18px;
+    display: block;
+    float: right;
+    font-size: 20px;
+    height: 28px;
+    padding-top: 4px;
+    text-align: center;
+    text-decoration: none;
+    width: 32px; }
+    .project .arrow.down {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
+  .project img {
+    border: 1px solid #fff;
+    height: 78px;
+    margin: 4px 10px 0 0;
+    width: 78px; }
+    .project img:hover {
+      border-color: #c6bd25; }
+
+@keyframes "point-down" {
+  from {
+    top: 0; }
+
+  to {
+    top: 5px; } }
+
+@-moz-keyframes point-down {
+  from {
+    top: 0; }
+
+  to {
+    top: 5px; } }
+
+@-webkit-keyframes "point-down" {
+  from {
+    top: 0; }
+
+  to {
+    top: 5px; } }
+
+@-ms-keyframes "point-down" {
+  from {
+    top: 0; }
+
+  to {
+    top: 5px; } }
+
+@-o-keyframes "point-down" {
+  from {
+    top: 0; }
+
+  to {
+    top: 5px; } }
+
+/*
+ * contact
+ */
+#contact a {
+  color: #23a01d; }
+  #contact a:hover {
+    background-color: #23a01d; }
+  #contact a.icon {
+    background: url(../img/icons.png) no-repeat 0 0;
+    display: block;
+    float: left;
+    height: 24px;
+    margin-right: 8px;
+    text-indent: -32000px;
+    width: 24px; }
+    #contact a.icon:hover {
+      background-color: transparent; }
+    #contact a.icon.skype {
+      background-position: 0 0; }
+    #contact a.icon.facebook {
+      background-position: -28px 0; }
+    #contact a.icon.xing {
+      background-position: -56px 0; }
+    #contact a.icon.linkedin {
+      background-position: -84px 0; }
+
+/*
+ * imprint
+ */
+#imprint {
+  line-height: 18px; }
+  #imprint h5 {
+    background-color: #555555;
+    display: inline;
+    padding: 0 3px; }
+  #imprint p {
+    margin-top: 8px; }
+
+/*
+ * navigation & footer
+ */
+nav,
+footer {
+  background-color: #262626;
+  font-size: 12px;
+  line-height: normal;
+  position: absolute;
+  z-index: 50; }
+  nav a,
+  footer a {
+    text-decoration: none; }
+
+nav {
+  left: 50%;
+  margin-left: -134px;
+  width: 268px; }
+  nav a {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #555555;
+    display: block;
+    float: left;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 8px;
+    text-transform: uppercase;
+    -webkit-transition: padding-top 0.1s ease-out;
+    -moz-transition: padding-top 0.1s ease-out;
+    -o-transition: padding-top 0.1s ease-out;
+    -ms-transition: padding-top 0.1s ease-out;
+    transition: padding-top 0.1s ease-out; }
+    nav a:last-child {
+      margin-right: 0; }
+    nav a:hover {
+      padding-top: 18px; }
+    nav a.selected[href="#about"] {
+      background-color: #00a0d6; }
+    nav a.selected[href="#projects"] {
+      background-color: #c6bd25; }
+    nav a.selected[href="#contact"] {
+      background-color: #23a01d; }
+
+footer {
+  bottom: 0;
+  padding: 8px 0;
+  text-align: center;
+  width: 100%; }
+  footer a:hover, footer a.selected {
+    background-color: #d60000; }
+  footer .fb-like {
+    margin-left: 25px; }
+
+/* ==========================================================================
+   helper classes
+   ========================================================================== */
+.right {
+  text-align: right; }
+
+.hidden {
+  display: none; }
+
+.protected {
+  unicode-bidi: bidi-override;
+  direction: rtl; }
+
+/*
+ * not supported browsers
+ */
+.warning {
+  background-color: #d60000;
+  display: none;
+  font-size: 14px;
+  height: 25px;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%; }
+  .warning a:hover {
+    text-decoration: underline; }
+
+.no-js nav,
+.no-jmpress nav {
+  top: 25px; }
+.no-js .hidden,
+.no-jmpress .hidden {
+  display: block; }
+.no-js #impress,
+.no-jmpress #impress {
+  margin-top: 75px; }
+.no-js section,
+.no-jmpress section {
+  margin-bottom: 50px; }
+  .no-js section.headline, .no-js section.project,
+  .no-jmpress section.headline,
+  .no-jmpress section.project {
+    display: block; }
+  .no-js section p.center,
+  .no-jmpress section p.center {
+    display: none; }
+
+.no-js #noJs {
+  display: block; }
+
+.no-jmpress #stoneAge {
+  display: block; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1; }
